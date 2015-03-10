@@ -13,6 +13,7 @@ public class ConfigTest {
             // ’l‚ÌŽæ“¾
             System.out.println(bundle.getString("id"));
             System.out.println(bundle.getString("password"));
+            
 
         } catch (MissingResourceException ex) {
             System.out.println(ex.getMessage());
