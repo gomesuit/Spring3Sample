@@ -18,9 +18,7 @@ public class App {
     public static void main( String[] args ){
  
         // Springコンテナ取得
-        ApplicationContext appContext =
-                //new ClassPathXmlApplicationContext("classpath:./META-INF/spring/app-context.xml");
-        		new ClassPathXmlApplicationContext("app-context.xml");
+        ApplicationContext appContext = new ClassPathXmlApplicationContext("app-context.xml");
         // SpringコンテナからAppクラスのオブジェクトを取得
         App app = appContext.getBean(App.class);
         // appを実行
