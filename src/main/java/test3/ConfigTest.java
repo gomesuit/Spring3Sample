@@ -1,5 +1,6 @@
 package test3;
 
+import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
 public class ConfigTest {
@@ -13,7 +14,7 @@ public class ConfigTest {
             System.out.println(bundle.getString("id"));
             System.out.println(bundle.getString("password"));
 
-        } catch (Exception ex) {
+        } catch (MissingResourceException ex) {
             System.out.println(ex.getMessage());
 
         }
